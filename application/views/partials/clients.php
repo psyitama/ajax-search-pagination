@@ -13,7 +13,7 @@
         <th scope="row"><?=$client['id']?></th>
         <td><?=$client['first_name']?></td>
         <td><?=$client['last_name']?></td>
-        <td><?=date_format(date_create($client['joined_datetime']), "F j Y")?></td>
+        <td><?=date_format(date_create($client['registered_datetime']), "F j Y")?></td>
         <td><?=$client['email']?></td>
     </tr>
     <?php endforeach;?>
